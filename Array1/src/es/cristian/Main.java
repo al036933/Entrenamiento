@@ -15,20 +15,22 @@ public class Main {
             numeros[i] = entrada.nextInt();
 
         }
-        System.out.println("Dame otros 5 números: " );
+
+        System.out.println(" ");
         for (int i = 0; i < otrosNumeros.length; i++) {
-            System.out.print("Número " + (i + 1) + ": ");
-            otrosNumeros[i] = entrada.nextInt();
-
-
+            otrosNumeros[otrosNumeros.length - i - 1] = numeros[i];
         }
 
-        System.out.println("Estos son los numeros: ");
-        // 1, 2, 3 4 5 6 7 8 8 9 10
-        for (int i = 0; i < otrosNumeros.length; i++) {
-            System.out.print(otrosNumeros[i] + "");
+        System.out.println("Array 1: ");
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.print(numeros[i] + " ");
         }
 
+        System.out.println();
+        System.out.println("Array 2: ");
+        for (int i = 0; i < otrosNumeros.length; i++) {
+            System.out.print(otrosNumeros[i] + " ");
+        }
         entrada.close();
     }
 }
