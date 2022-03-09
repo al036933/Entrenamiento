@@ -18,7 +18,7 @@ public class Main {
 
         System.out.println(" ");
         for (int i = 0; i < otrosNumeros.length; i++) {
-            otrosNumeros[otrosNumeros.length - i - 1] = numeros[i];
+            otrosNumeros[i] = numeros[i] * (-1);
         }
 
         System.out.println("Array 1: ");
